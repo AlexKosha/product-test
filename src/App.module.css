@@ -1,0 +1,89 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+.main {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  padding: 1.5rem; /* p-6 */
+}
+
+.header {
+  max-width: 72rem; /* max-w-6xl */
+  margin: 0 auto 1.5rem auto; /* mx-auto mb-6 */
+}
+
+.header h1 {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .header h1 {
+    font-size: 1.875rem; /* md:text-3xl */
+  }
+}
+
+.productGrid {
+  max-width: 72rem; /* max-w-6xl */
+  margin: 0 auto; /* mx-auto */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem; /* gap-6 */
+}
+
+@media (min-width: 640px) {
+  .productGrid {
+    grid-template-columns: repeat(2, 1fr); /* sm:grid-cols-2 */
+  }
+}
+
+@media (min-width: 768px) {
+  .productGrid {
+    grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .productGrid {
+    grid-template-columns: repeat(4, 1fr); /* lg:grid-cols-4 */
+  }
+}
